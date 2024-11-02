@@ -6,6 +6,7 @@ import Portfolio from "./pages/Portfolio"
 import Contact from "./pages/Contact"
 import About from "./pages/About"
 import Signup from "./pages/Signup"
+import Error from "./pages/Error"
 
 function Routing() {
   return (
@@ -19,6 +20,8 @@ function Routing() {
         <Route path="/Portfolio" element={<Portfolio/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/about" element={<About/>}/>
+        <Route path="/error" element={<Error/>}/>
+        <Route path="*" element={<Error/>}/>
       </Routes>
     </div>
   )
